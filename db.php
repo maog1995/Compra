@@ -5,7 +5,6 @@
  * Date: 10/02/2016
  * Time: 18:23
  */
-<?php
 // Array with names
 $a[] = "<article id='completo'>
             <h4>iphone 6</h4>

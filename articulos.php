@@ -5,8 +5,6 @@
  * Date: 10/02/2016
  * Time: 18:24
  */
-
-<?php
 // Array with names
 $a[] = "<article onclick=mas_info(1)>
             <h4>iphone 6</h4>
