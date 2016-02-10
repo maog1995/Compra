@@ -5,7 +5,8 @@
  * Date: 10/02/2016
  * Time: 18:24
  */
-// Array with names
+// Array con los articulos a vender
+//0
 $a[] = "<article onclick=mas_info(1)>
             <h4>iphone 6</h4>
             <img src='images/moviles/iphone6.jpg' alt=''>
@@ -15,7 +16,7 @@ $a[] = "<article onclick=mas_info(1)>
                 <li>Almacenamiento: min 16 GB</li>
             </ul>
         </article>";
-
+//1
 $a[]="<article onclick=mas_info(2)>
             <h4>iphone 6s plus</h4>
             <img src='images/moviles/iphone6splus.jpg' alt=''>
@@ -25,7 +26,7 @@ $a[]="<article onclick=mas_info(2)>
                 <li>Almacenamiento: min 16 GB</li>
             </ul>
         </article>";
-
+//2
 $a[]="<article onclick=mas_info(3)>
             <h4>iphone 5s</h4>
             <img src='images/moviles/iphone5s.jpg' alt=''>
@@ -39,9 +40,6 @@ $a[]="<article onclick=mas_info(3)>
 // get the q parameter from URL
 
 $hint=$a[0].$a[1].$a[2];
-
-// lookup all hints from array if $q is different from ""
-
 
 // Output "no suggestion" if no hint was found or output correct values
 echo $hint === "" ? "no suggestion" : $hint;

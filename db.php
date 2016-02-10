@@ -5,7 +5,8 @@
  * Date: 10/02/2016
  * Time: 18:23
  */
-// Array with names
+// Array con los articulos a vender
+//0
 $a[] = "<article id='completo'>
             <h4>iphone 6</h4>
             <img src='images/moviles/iphone6.jpg' alt=''>
@@ -20,6 +21,7 @@ $a[] = "<article id='completo'>
             <button onclick='inicio()' >Volver</button>
         </article>";
 
+//1
 $a[]="<article id='completo'>
             <h4>iphone 6s plus</h4>
             <img src='images/moviles/iphone6splus.jpg' alt=''>
@@ -33,7 +35,7 @@ $a[]="<article id='completo'>
             <button onclick='carrito(1,document.getElementById(\"unidades\").value)'>Añadir al carrito</button>
             <button onclick='inicio()' >Volver</button>
         </article>";
-
+//2
 $a[]="<article id='completo'>
             <h4>iphone 5s</h4>
             <img src='images/moviles/iphone5s.jpg' alt=''>
@@ -52,9 +54,6 @@ $a[]="<article id='completo'>
 $q = $_REQUEST["q"];
 
 $hint = $a[$q-1];
-
-// lookup all hints from array if $q is different from ""
-
 
 // Output "no suggestion" if no hint was found or output correct values
 echo $hint === "" ? "no suggestion" : $hint;

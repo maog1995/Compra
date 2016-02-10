@@ -19,16 +19,7 @@ function mas_info(str) {
     }
 }
 
-window.onload= function poner_articulos(){
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function () {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            document.getElementsByTagName("SECTION")[0].innerHTML = xmlhttp.responseText;
-        }
-    };
-    xmlhttp.open("GET", "articulos.php", true);
-    xmlhttp.send();
-}
+window.onload= inicio();
 
 function inicio(){
     var xmlhttp = new XMLHttpRequest();
